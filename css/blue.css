@@ -1,0 +1,43 @@
+:root{
+    --azul: #1d3a98;
+    --gris: #c9c9c9;
+    --morado: #623487;
+    --blanco: #ffff;
+    --negro: black;
+    --azul_bajo: #3d49d3;
+    --amarillo: #f8e900;
+    --ubuntu: 'Ubuntu', sans-serif;
+    --merri: 'Merriweather', serif;
+}
+
+body{
+    background: url("../img/universo-azul.jpg"); 
+   
+}
+.menu{
+    
+ 
+    background-color: var(--azul);
+   
+
+
+}
+
+.menu li:hover{
+    background-color: var(--azul_bajo);
+}
+.barra h3{
+    
+    background-color: var(--azul);
+  
+
+}
+.footer{
+  
+    background-color: var(--azul);
+    color: var(--blanco);
+    
+
+}
+
+

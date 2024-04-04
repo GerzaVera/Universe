@@ -1,0 +1,42 @@
+:root{
+    --azul: #1d3a98;
+    --gris: #c9c9c9;
+    --morado: #623487;
+    --violeta: #ae6ccb;
+    --blanco: #ffff;
+    --negro: black;
+    --azul_bajo: #3d49d3;
+    --amarillo: #f8e900;
+    --ubuntu: 'Ubuntu', sans-serif;
+    --merri: 'Merriweather', serif;
+}
+
+body{
+    background: url("../img/galaxia.jpg"); 
+   
+}
+.menu{
+    
+ 
+    background-color: var(--morado);
+   
+
+
+}
+
+.menu li:hover{
+    background-color: var(--violeta);
+}
+.barra h3{
+    
+    background-color: var(--morado);
+  
+
+}
+.footer{
+  
+    background-color: var(--morado);
+    color: var(--blanco);
+    
+
+}

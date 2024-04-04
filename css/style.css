@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Ubuntu&display=swap');
+
+:root{
+    --azul: #1d3a98;
+    --gris: #c9c9c9;
+    --morado: #623487;
+    --blanco: #ffff;
+    --negro: black;
+    --azul_bajo: #3d49d3;
+    --amarillo: #f8e900;
+    --ubuntu: 'Ubuntu', sans-serif;
+    --merri: 'Merriweather', serif;
+}
+p{
+    font-family: var(--merri);
+}
+body{
+    background: url("../img/universo-azul.jpg"); 
+   background-repeat: no-repeat;
+   
+}
+
+
+
+
+.container{
+    width: 85%;
+   
+    background: url("../img/pattern.png");
+    background-color: var(--blanco);
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 2px 5px black;
+
+}
+.content-slider{
+    width: 95%;
+    margin: 0 auto;
+    
+}
+.content-slider img{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+.cabeza{
+    background: url("../img/universe.jpg");
+    border: 5px solid var(--morado);
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px var(--gris);
+    animation: backBanner 10s linear;
+
+    
+}
+@keyframes backBanner{
+	0%{
+		background-position: 0px 0px;
+	}
+	100%{
+		background-position: -200px -200px;
+	}
+
+}
+
+
+
+.cabeza h1{
+    font-family: var(-merri);
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: 0px 8px 5px var(--negro);
+    text-align: center;
+    line-height: 3;
+    color: var(--blanco);
+    
+  
+    
+}
+
+
+h1{
+    
+    animation: showtext 10s linear;
+}
+
+@keyframes showtext{
+	0%{
+      transform: translateX(-600%) scale(5,5);
+      opacity: 1;
+
+	}
+	50%{
+	  transform: translateX(600%) scale(5,5);
+      opacity: 1;
+
+    }
+	75%{
+      transform: translateX(-600%) scale(5,5);
+      text-shadow: none;
+      color: transparent;
+      opacity: 0;
+	}
+	100%{
+		transform: translateX(0%) scale(1,1);
+		text-shadow: 2px 2px 1px black;
+		color: white;
+        opacity: 1;
+
+	}
+}
+
+.menu{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    line-height: 2;
+    margin: 0 auto;
+    background-color: var(--azul);
+    text-align: center;
+    list-style: none;
+    grid-gap: 1em;
+
+
+}
+.menu li{
+   width: 100%;
+   margin: 0 auto;
+   transition: 350ms;
+  
+   
+
+}
+.menu li:hover{
+    background-color: var(--azul_bajo);
+    box-shadow: 0px 2px 4px black;
+   
+    
+ }
+.menu li a{
+    
+    text-decoration: none;
+    color: white;
+    font-family: var(--ubuntu);
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 350ms;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: var(--amarillo);
+    
+}
+
+.cuerpo-page{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3rem;
+    margin-top: 2.5rem;
+
+}
+.secciones .section{
+    
+    margin-bottom: 20px;
+
+}
+.article p{
+    font-family: var(--ubuntu);
+    font-size: 15px;
+}
+.section h2{
+    font-family: var(--merri);
+    font-size: 22px;
+    color: var(--azul);
+    margin-bottom: 7px;
+    
+}
+.imagen-nasa img{
+    width: 98%;
+    overflow: hidden;
+    border: 4px solid var(--gris);
+    cursor: pointer;
+    
+}
+
+
+.barra h3{
+    font-family: var(--merri);
+    font-size: 22px;
+    color: var(--blanco);
+    background-color: var(--azul);
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+.barra p{
+    margin-bottom: 10px;
+}
+.btn-colors{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+.btn-colors .azul{
+    background-color: var(--azul);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+.btn-colors .negro{
+    background-color: var(--negro);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+.btn-colors .morado{
+    background-color: var(--morado);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 28px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-family: var(--merri);
+    font-size: 22px;
+
+
+}
+.redes_sociales i{
+  margin: 5px;
+ cursor: pointer;
+
+}
+/*RELOJ*/
+
+.wrap{
+    width: 40%;
+    max-width: 1000px;
+    margin: auto;
+}
+.widget{
+    /*width: 40%;*/
+    margin: 2em;
+}
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+.fecha{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    background: var(--azul);
+    color: var(--amarillo);
+    padding: 20px;
+    width: 100%;
+    border-radius: 1rem;
+}
+.reloj{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    color: var(--amarillo);
+    background: var(--azul);
+    border-radius: 1rem;
+}
+.reloj .caja-segundos{
+    display: inline-block;
+}
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}
+
+
+/*RESPONSIVE WEB DESING*/
+@media(max-width: 768px){
+    .cabeza h1 {
+        font-family: var(-merri);
+        font-size: 25px;
+        letter-spacing: 5px;
+        text-shadow: 0px 8px 5px var(--negro);
+        text-align: center;
+        line-height: 3;
+        color: var(--blanco);
+        width: 100%;
+        
+}
+.menu {
+    background-color: var(--azul);
+    display: block;
+  }
+  .cuerpo-page {
+    width: 95%;
+    margin: 0 auto;
+      margin-top: 0px;
+    display: grid;
+    grid-template-columns: none;
+    grid-gap: 3rem;
+    margin-top: 2.5rem;
+
+}
+.content-slider{
+    width: 95%;
+    height: 200px;
+    overflow: hidden;
+   
+}
+.content-slider img{
+   height: 200px;
+   background-size: cover;
+   background-position: center center;
+}
+
+/*RELOJ*/
+
+.wrap{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.widget{
+    /*width: 40%;*/
+    margin: 2em;
+}
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+.fecha{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    background: var(--azul);
+    color: var(--amarillo);
+    padding: 20px;
+    width: 100%;
+    border-radius: 1rem;
+}
+.reloj{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    color: var(--amarillo);
+    background: var(--azul);
+    border-radius: 1rem;
+}
+.reloj .caja-segundos{
+    display: inline-block;
+}
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}
+
+}
+
+/*CARGA*/
+
+#contenedor_carga{
+    background-color: var(--azul);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all time;
+    -o-transition: all time;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+/*#carga{
+    border:15px solid #ccc;
+    border-top-color:var(--azul);
+    border-top-style:groove ;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: girar 1.5s linear infitnite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+
+}
+
+*/
+#carga{
+   color: var(--blanco);
+   font-size: 100px;
+    height: 100px;
+    width: 100px;
+    
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: girar 1.5s linear infitnite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+}
+
+
+
+
+
